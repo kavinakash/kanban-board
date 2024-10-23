@@ -1,0 +1,240 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+  font-weight: 500;
+  overflow-x: hidden; 
+}
+
+/* App Container */
+.app {
+  background-color: #f4f5f8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  overflow-x: hidden; 
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 0 0 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  transition: box-shadow 0.3s ease;
+  box-sizing: border-box; 
+}
+
+/* Display Button */
+.display-button-container {
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: -10px; 
+}
+
+.display-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 7px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  margin-top: 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #f4f5f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px 12px 5px 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.dropdown-item span {
+  margin-right: 120px;
+  color: #666;
+  font-size: 14px;
+}
+
+.dropdown-item select {
+  padding: 4px 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.dropdown-item select:hover {
+  background-color: #e0e0e0;
+}
+
+.dropdown-item select:focus {
+  outline: none;
+  border-color: #bdbdbd;
+  box-shadow: 0 0 0 2px rgba(189, 189, 189, 0.2);
+}
+
+/* Kanban Board */
+.kanban-board {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.group-column {
+  flex: 1;
+  min-width: 340px;
+  max-width: 340px;
+  background: #f4f5f8;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+/* Group Header */
+.group-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.ticket-count {
+  color: #666;
+  font-size: 14px;
+}
+
+.add-button,
+.option-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.add-button {
+  margin-left: auto;
+}
+
+/* Tickets Container */
+.tickets-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* User Avatar */
+.user-avatar {
+  width: 24px;
+  height: 24px;
+  background: #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+/* Ticket Card */
+.ticket-card {
+  background: white;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.ticket-id {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Ticket Title */
+.ticket-title {
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Center items vertically */
+  font-size: 14px;
+  margin-bottom: 8px;
+  height: 40px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
+}
+
+.status-icon {
+  margin-right: 5px; 
+}
+
+/* Ticket Tags */
+.ticket-tags {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.tag {
+  font-size: 12px;
+}
+
+.priority-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.circle-icon {
+  width: 12px;
+  height: 12px;
+  background-color: #bec2c8;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.tag-container {
+  display: flex;
+  align-items: center;
+  background: #f4f5f8;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 18px;
+  color: #333;
+  background-color: #f5f5f5;
+}
